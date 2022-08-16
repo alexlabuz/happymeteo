@@ -1,0 +1,47 @@
+@media (max-width: 500px){
+    :root {
+        --widthPage: -80%:
+    }
+
+    body{
+        display: block;
+    }
+
+    #mobileBar{
+        display: block;
+        height: 3em;
+        background-color: rgb(1, 85, 154);
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: end;
+    }
+
+    #mobileBar > span{
+        padding: 12px;
+    }
+
+    /*-- NAVBAR --*/
+    #navBar{
+        position: fixed;
+        top: 0px;
+        left: -100%;
+        width: 80%;
+        transition: 0.7s;
+    }
+
+    #navBar #cityInput{
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #navBar #cityInput::placeholder {
+        color: lightslategray;
+    }
+
+    /*-- CONTENTPAGE --*/
+    #contentPage{
+        padding-top: 0px;
+    }
+
+}

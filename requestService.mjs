@@ -14,7 +14,7 @@ export async function getSearch(c) {
 }
 
 export async function getForecast(c) {
-    var city = c === "" || c === null ? "London" : c
+    var city = c
     var url = "http://api.weatherapi.com/v1/forecast.json?key=e3659c2490cd410282a145840222407&q=" + city + "&days=1&aqi=no&alerts=no"
     var request = await fetch(url, {
             method: 'POST',
